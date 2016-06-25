@@ -1,0 +1,99 @@
+Jun 23 01:27:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step4   leave 2051939962-10264-2@BJC.BGI.CAA.BCE 20160623T012755.282073
+Jun 23 01:27:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step5   leave 2051939962-10264-2@BJC.BGI.CAA.BCE 20160623T012755.282527
+Jun 23 01:27:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step6   leave 2051939962-10264-2@BJC.BGI.CAA.BCE 20160623T012755.282546
+Jun 23 01:27:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step7   leave 2051939962-10264-2@BJC.BGI.CAA.BCE 20160623T012755.282554
+Jun 23 01:27:55 ip-11-0-5-6 conference[13825]:  NOTICE TranEnd   leave 2051939962-10264-2@BJC.BGI.CAA.BCE 00:00:00.000544
+Jun 23 01:27:59 ip-11-0-5-6 conference[13825]:  INFO    confsip close transaction callid=411282991-46825-8@BJC.BGI.CAA.BGF:102-1548263488  [cb_nict_kill_transaction line:184]
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  INFO    uid=1034383596-18042-32@BJC.BGI.CAA.BIB;action=leave;conf-id=130569598;reason=Client End Call;calltype=1;sip_account=8200093;tid=1034383596-18042-32@BJC.BGI.CAA.BIB:315;time=20160623012815;param=1100100001100000&1&0&0&shqu's-GVC&8200093;remote-server=1  [getTranData line:194]
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE TranBegin   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996259
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  INFO    publish data deal not lock conf info in redis  [doSteps line:364]
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE ----->step1   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996291
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE ----->step2   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996304
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE ----->step3   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996311
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE ----->step4   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996319
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE ----->step5   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996741
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE ----->step6   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996760
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE ----->step7   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 20160623T012815.996768
+Jun 23 01:28:15 ip-11-0-5-6 conference[13825]:  NOTICE TranEnd   leave 1034383596-18042-32@BJC.BGI.CAA.BIB 00:00:00.000516
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  INFO    uid=411282991-46825-8@BJC.BGI.CAA.BGF;action=leave;conf-id=140468599;reason=RTP Timeout;calltype=1;sip_account=8200126;tid=411282991-46825-8@BJC.BGI.CAA.BGF:103;time=20160623012855;param=1100100001100000&1&0&0&&8200126;remote-server=1  [getTranData line:194]
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE TranBegin   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.235864
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  INFO    publish data deal not lock conf info in redis  [doSteps line:364]
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step1   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.235896
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step2   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.235907
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step3   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.235914
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step4   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.235921
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step5   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.236289
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step6   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.236308
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE ----->step7   leave 411282991-46825-8@BJC.BGI.CAA.BGF 20160623T012855.236316
+Jun 23 01:28:55 ip-11-0-5-6 conference[13825]:  NOTICE TranEnd   leave 411282991-46825-8@BJC.BGI.CAA.BGF 00:00:00.000460
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  INFO    uid=1573734927-18042-33@BJC.BGI.CAA.BIB;action=join;video-status=1;region=Beijing1;src_addr=101.71.248.138:45798;sips-addr=11.0.6.5;asterisk-addr=(null):5062;display="shqu's-GVC";User-Agent=Grandstream GVC3200 1.0.1.74;channel=SIP/8200093-00000014;sip_account=8200093;calltype=1;email=UnKnow;conf-id=150566600;from=1573734927-18042-33@BJC.BGI.CAA.BIB;tid=1573734927-18042-33@BJC.BGI.CAA.BIB:102;time=20160623012931;param=0&0&1&1&20160623012932_20160623012932&0011&1100100001100000&10&0&0&1;remote-server=1  [getTranData line:194]
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE TranBegin  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.074881
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  INFO    publish data deal not lock conf info in redis  [doSteps line:364]
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step1  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.074913
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step2  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.074922
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step3  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.074930
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step4  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.074937
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step5  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.074944
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:refresh_150566600  [hget line:1598]
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  INFO    confsip step1 pubTask sip  [pushTask line:180]
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step6  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.075598
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step7  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.075612
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE ----->step8  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 20160623T012932.075620
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  NOTICE TranEnd  1573734927-18042-33@BJC.BGI.CAA.BIB join 1573734927-18042-33@BJC.BGI.CAA.BIB 00:00:00.000747
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  INFO    confsip step2 thread start sendMessage  [getTaskThread line:234]
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  INFO    confsip step3 osip thead start send  [sendMessage line:584]
+Jun 23 01:29:32 ip-11-0-5-6 conference[13825]:  INFO    confsip SIP last step4 sendto:NOTIFY sip:11.0.5.6:5060 SIP/2.0#015#012Via: SIP/2.0/UDP 11.0.5.6:8900;branch=z9hG4bK1564113982;rport#015#012From: <sip:conference@11.0.5.6:5060>;tag=1537631475#015#012To: <sip:150566600@11.0.5.6:5060>#015#012Call-ID: 1573734927-18042-33@BJC.BGI.CAA.BIB:102-2081710245#015#012CSeq: 1000 NOTIFY#015#012Content-Type: application/conference-info+xml#015#012Max-Forwards: 70#015#012User-Agent: conference#015#012Event: X-GS-CONFERENCE#015#012X-GS-Notify-Users: all#015#012Content-Length:   388#015#012#015#012<?xml version="1.0" encoding="utf-8"?>#012<conference-info refresh="2" entity="150566600" state="partial" host="8200093" presenter="8200093" s="1100100001100000" options="10" time="20160623012932_20160623012932"><users><user entity="8200093" state="full" display="shqu&apos;s-GVC" ua="Grandstream GVC3200 1.0.1.74" region="Beijing1" type="9" s="0011" options="10"/></users></conference-info>  [cb_send_message line:972]
+Jun 23 01:29:37 ip-11-0-5-6 conference[13825]:  INFO    confsip close transaction callid=1573734927-18042-33@BJC.BGI.CAA.BIB:102-2081710245  [cb_nict_kill_transaction line:184]
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  INFO    uid=663717134-10264-3@BJC.BGI.CAA.BCE;action=join;video-status=1;region=Beijing1;src_addr=101.71.248.138:48182;sips-addr=11.0.6.5;asterisk-addr=(null):5062;display=;User-Agent=Grandstream GVC3200 1.0.1.77;channel=SIP/8200190-00000015;sip_account=8200190;calltype=1;email=UnKnow;conf-id=140361602;from=663717134-10264-3@BJC.BGI.CAA.BCE;tid=663717134-10264-3@BJC.BGI.CAA.BCE:102;time=20160623013020;param=0&0&1&1&20160623013020_20160623013020&0011&1100100001100010&10&0&0&1;remote-server=1  [getTranData line:194]
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE TranBegin  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.519277
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  INFO    publish data deal not lock conf info in redis  [doSteps line:364]
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step1  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.519310
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step2  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.519319
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step3  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.519327
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step4  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.519334
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step5  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.519342
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:refresh_140361602  [hget line:1598]
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  INFO    confsip step1 pubTask sip  [pushTask line:180]
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step6  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.520001
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step7  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.520016
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE ----->step8  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013020.520024
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  NOTICE TranEnd  663717134-10264-3@BJC.BGI.CAA.BCE join 663717134-10264-3@BJC.BGI.CAA.BCE 00:00:00.000755
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  INFO    confsip step2 thread start sendMessage  [getTaskThread line:234]
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  INFO    confsip step3 osip thead start send  [sendMessage line:584]
+Jun 23 01:30:20 ip-11-0-5-6 conference[13825]:  INFO    confsip SIP last step4 sendto:NOTIFY sip:11.0.5.6:5060 SIP/2.0#015#012Via: SIP/2.0/UDP 11.0.5.6:8900;branch=z9hG4bK893018316;rport#015#012From: <sip:conference@11.0.5.6:5060>;tag=1149890452#015#012To: <sip:140361602@11.0.5.6:5060>#015#012Call-ID: 663717134-10264-3@BJC.BGI.CAA.BCE:102-1372938685#015#012CSeq: 1000 NOTIFY#015#012Content-Type: application/conference-info+xml#015#012Max-Forwards: 70#015#012User-Agent: conference#015#012Event: X-GS-CONFERENCE#015#012X-GS-Notify-Users: all#015#012Content-Length:   373#015#012#015#012<?xml version="1.0" encoding="utf-8"?>#012<conference-info refresh="2" entity="140361602" state="partial" host="8200190" presenter="8200190" s="1100100001100010" options="10" time="20160623013020_20160623013020"><users><user entity="8200190" state="full" display="" ua="Grandstream GVC3200 1.0.1.77" region="Beijing1" type="9" s="0011" options="10"/></users></conference-info>  [cb_send_message line:972]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  INFO    confsip close transaction callid=663717134-10264-3@BJC.BGI.CAA.BCE:102-1372938685  [cb_nict_kill_transaction line:184]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  INFO    uid=invite-24a6@192.168.200.243;action=leave;conf-id=160264601;reason=Server End Call;calltype=1;sip_account=8200115;tid=invite-24a6@192.168.200.243:102;time=20160623013025;param=;remote-server=0  [getTranData line:194]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  NOTICE TranBegin   leave invite-24a6@192.168.200.243 20160623T013025.983810
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  NOTICE ----->step1   leave invite-24a6@192.168.200.243 20160623T013025.983838
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  WAR    0 == tid.size()  [getCallidFromTid line:186]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  ERR   20160623013025 uid=invite-24a6@192.168.200.243;action=leave;conf-id=160264601;reason=Server End Call;calltype=1;sip_account=8200115;tid=invite-24a6@192.168.200.243:102;time=20160623013025;param=;remote-server=0  [checkCallid line:784]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  ERR   20160623013025 tranCallid != accCallid,:invite-24a6@192.168.200.243 !=   [checkCallid line:784]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  INFO   20160623013025 callid != callid(redis acc),so not clear acc info in redis  [step1 line:71]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  NOTICE ----->step2   leave invite-24a6@192.168.200.243 20160623T013025.995890
+Jun 23 01:30:25 ip-11-0-5-6 conference[13825]:  INFO    accinvite-24a6@192.168.200.243  [checkKeyExist line:1473]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  ERR   20160623013025 uid=invite-24a6@192.168.200.243;action=leave;conf-id=160264601;reason=Server End Call;calltype=1;sip_account=8200115;tid=invite-24a6@192.168.200.243:102;time=20160623013025;param=;remote-server=0  [getConfInfo line:622]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  ERR   20160623013025 getSipAccount empty,so get sip account from cmd from opensips  [getConfInfo line:622]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    160264601  [checkKeyExist line:1473]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  ERR   20160623013025 uid=invite-24a6@192.168.200.243;action=leave;conf-id=160264601;reason=Server End Call;calltype=1;sip_account=8200115;tid=invite-24a6@192.168.200.243:102;time=20160623013025;param=;remote-server=0  [getConfInfo line:628]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  ERR   20160623013025 conference::checkConfExist fail,so not exit confid  [getConfInfo line:628]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    myself channel is:  [step2 line:108]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:160264601  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO   20160623013025 kick all users when gvc leave as host  [step2 line:119]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  ERR    pubFun:pCTransaction is NULL  [CheckDeviceSupportAutoDemo line:251]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  WAR   20160623013025 uid=invite-24a6@192.168.200.243;action=leave;conf-id=160264601;reason=Server End Call;calltype=1;sip_account=8200115;tid=invite-24a6@192.168.200.243:102;time=20160623013025;param=;remote-server=0  [step2 line:127]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  WAR   20160623013025 leave:can not support this device as host if it is sip device :  [step2 line:127]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  WAR   20160623013025   [step2 line:127]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:160264601  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    creatorLeave:strCreatorCallid != m_pTransaction->m_strUid  [creatorLeave line:1071]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO      [creatorLeave line:1072]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO   20160623013025 conf is end,so not notice web(conf no body)  [confNoBody line:583]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+Jun 23 01:30:26 ip-11-0-5-6 conference[13825]:  INFO    no such key or key type error key:accinvite-24a6@192.168.200.243  [hget line:1598]
+

@@ -1,0 +1,22 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: syslog
+scopeName: source.syslog
+fileTypes: ['log']
+uuid: 25d8a3ff-0b8b-453b-a01e-e3de47162536
+
+patterns:
+- include: '#string'
+
+- include: '#support'
+
+- name: invalid.deprecated
+  match: \bWAR\b
+
+- name: comment
+  match: \bINFO\b
+
+- name: support.class
+  match: \bNOTICE\b
+
+- name: invalid.illegal
+  match: \bERR\b

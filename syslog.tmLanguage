@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+	</array>
+	<key>name</key>
+	<string>syslog</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#string</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#support</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bWAR\b</string>
+			<key>name</key>
+			<string>invalid.deprecated</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bINFO\b</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bNOTICE\b</string>
+			<key>name</key>
+			<string>support.class</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bERR\b</string>
+			<key>name</key>
+			<string>invalid.illegal</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.syslog</string>
+	<key>uuid</key>
+	<string>25d8a3ff-0b8b-453b-a01e-e3de47162536</string>
+</dict>
+</plist>
