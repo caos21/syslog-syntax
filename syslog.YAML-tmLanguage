@@ -10,13 +10,31 @@ patterns:
 - include: '#support'
 
 - name: invalid.deprecated
-  match: \bWAR\b
+  match: \b(WAR|WARNING)\b
 
 - name: comment
-  match: \bINFO\b
+  match: \b(INFO|VERBOSE)\b
 
 - name: support.class
   match: \bNOTICE\b
 
 - name: invalid.illegal
-  match: \bERR\b
+  match: \b(ERR|ERROR)\b
+
+- name: string.quote.single 
+  match: ^\s*\[.+?\]
+
+- name: constant.character
+  match: \<— SIP read from .+ —\>
+
+- name: constant.numeric
+  match: \<— Transmitting \(NAT\) .+ —\>
+
+- name: string.quote.double
+  match: ^(INVITE|ACK|OPTIONS|CANCEL|BYE|SUBSCRIBE|NOTIFY|INFO|REFER|UPDATE|MESSAGE) sip:
+
+- name: entity.name
+  match: ^Call-ID\:.+$
+
+- name: entity.other
+  match: ^User-Agent:\:.+$

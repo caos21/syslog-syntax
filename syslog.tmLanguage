@@ -4,6 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
+		<string>log</string>
 	</array>
 	<key>name</key>
 	<string>syslog</string>
@@ -19,13 +20,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bWAR\b</string>
+			<string>\b(WAR|WARNING)\b</string>
 			<key>name</key>
 			<string>invalid.deprecated</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bINFO\b</string>
+			<string>\b(INFO|VERBOSE)\b</string>
 			<key>name</key>
 			<string>comment</string>
 		</dict>
@@ -37,9 +38,27 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bERR\b</string>
+			<string>\b(ERR|ERROR)\b</string>
 			<key>name</key>
 			<string>invalid.illegal</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*\[.+?\]</string>
+			<key>name</key>
+			<string>string.quote.single</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\&lt;— SIP read from .+ —\&gt;</string>
+			<key>name</key>
+			<string>constant.character</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\&lt;— Transmitting \(NAT\) .+ —\&gt;</string>
+			<key>name</key>
+			<string>constant.numeric</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
