@@ -1,195 +1,44 @@
-<— SIP read from UDP:115.236.68.170:6990 —>
+这一种颜色
+[Jun 23 01:00:23] NOTICE[14106][C-00000004] chan_sip.c: [2016-06-23 01:00:23] Outgoing: ---> SIP transmit to UDP:54.223.40.55:5060 ||| BYE sip:11.0.6.5:5060;transport=udp SIP/2.0~~Via: SIP/2.0/UDP 11.0.32.5:5062;branch=z9hG4bK190e3545;rport~~Route: <sip:11.0.5.5:5060;transport=udp;lr>~~Max-Forwards: 70~~From: <sip:90160165280@pro.ipvideotalk.com:30000>;tag=as3a1c3ec0~~To: <sip:8200073@pro.ipvideotalk.com:30000>;tag=1940317541~~Call-ID: 1028412468-47092-11@BJC.BGI.CAA.BBC~~CSeq: 103 BYE~~User-Agent: GrandStream X-Server 1.0.2.15 (M)~~X-Hangup: RTP Timeout~~X-ECode: 5001~~X-Channel-User-Id: 8200073~~X-Channel-Conf-Id: 160165280~~Content-Length: 0~~~~
 
-<——————>
-[Jun 23 01:00:17] VERBOSE[14063] chan_sip.c: Really destroying SIP dialog 'NOTIFIER1466643584359411@11.0.6.5' Method: OPTIONS
-[Jun 23 01:00:19] VERBOSE[14063] chan_sip.c: Really destroying SIP dialog 'NOTIFIER1466643586115871@11.0.5.5' Method: OPTIONS
-[Jun 23 01:00:19] NOTICE[14063] chan_sip.c: [2016-06-23 01:00:19] Incoming: <— SIP read from   UDP:115.236.68.170:6990 ||| ~~
-[Jun 23 01:00:19] VERBOSE[14063] chan_sip.c: 
-<— SIP read from UDP:115.236.68.170:6990 —>
+[Jun 23 01:00:23] NOTICE[14063] chan_sip.c: [2016-06-23 01:00:23] Incoming: <--- SIP read from   UDP:54.223.40.55:5060 ||| SIP/2.0 200 OK~~Record-Route: <sip:160165280@11.0.5.5:5060;transport=udp;lr>~~Via: SIP/2.0/UDP 11.0.32.5:5062;received=54.223.80.90;branch=z9hG4bK190e3545;rport=5062~~Record-Route: <sip:90160165280@pro.ipvideotalk.com:30000;transport=tcp;lr>~~From: <sip:90160165280@pro.ipvideotalk.com:30000>;tag=as3a1c3ec0~~To: <sip:8200073@pro.ipvideotalk.com:30000>;tag=1940317541~~Call-ID: 1028412468-47092-11@BJC.BGI.CAA.BBC~~CSeq: 103 BYE~~X-GS-SERVER-ID: m+vllFAzgeQkKuY+1MtWnOh6JRvcaTM1l6xo/v33/rWRHIIYV2k~~Supported: replaces, path, timer, eventlist~~User-Agent: Grandstream GVC3200 1.0.1.78~~X-Device-Alias: Grandstream GVC3200 1.0.1.78~~Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, SUBSCRIBE, NOTIFY, INFO, REFER, UPDATE, MESSAGE~~Content-Length: 0~~Contact: <sip:160165280@11.0.5.5:5060;transport=udp>~~~~
 
-<——————>
-[Jun 23 01:00:23] NOTICE[14063] chan_sip.c: Disconnecting call 'SIP/8200073-00000002' for lack of RTP activity in 61 seconds
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] bridge_channel.c: Channel SIP/8200073-00000002 left 'softmix' base-bridge <c281f36e-009e-497a-8f2d-81bea99e1e45>
-[Jun 23 01:00:23] VERBOSE[14194][C-00000004] bridge_channel.c: Channel CBAnn/160165280-00000002;2 joined 'softmix' base-bridge <c281f36e-009e-497a-8f2d-81bea99e1e45>
-[Jun 23 01:00:23] WARNING[14194][C-00000004] bridge_softmix.c: softmix_bridge_join Changing ssrc,invoke softmix_src_change(CBAnn/160165280-00000002;2)
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] file.c: <CBAnn/160165280-00000002;1> Playing 'confbridge-leave.gsm' (language '')
-[Jun 23 01:00:23] VERBOSE[14194][C-00000004] bridge_channel.c: Channel CBAnn/160165280-00000002;2 left 'softmix' base-bridge <c281f36e-009e-497a-8f2d-81bea99e1e45>
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] pbx.c: Executing [h@internal:1] NoOp("SIP/8200073-00000002", "start to leave conference,we need check bridged") in new stack
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] pbx.c: Executing [h@internal:2] GotoIf("SIP/8200073-00000002", "0?direct_leave") in new stack
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] pbx.c: Executing [h@internal:3] Set("SIP/8200073-00000002", "BridgeChannel=") in new stack
-[Jun 23 01:00:23] VERBOSE[14026] asterisk.c: Remote UNIX connection
-[Jun 23 01:00:23] VERBOSE[14196] asterisk.c: Remote UNIX connection disconnected
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] pbx.c: Executing [h@internal:4] NoOp("SIP/8200073-00000002", "Usage: channel request hangup <channel>|<all>
-       Request that a channel be hung up. The hangup takes effect
-       the next time the driver reads or writes from the channel.
-       If 'all' is specified instead of a channel name, all channels
-       will see the hangup request.
-") in new stack
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] pbx.c: Executing [h@internal:5] NoOp("SIP/8200073-00000002", "thank you ,goodbye") in new stack
-[Jun 23 01:00:23] WARNING[14106][C-00000004] chan_sip.c: Audio(callerid=8200073,exten=160165280,callid=1028412468-47092-11@BJC.BGI.CAA.BBC) Sipproxy=54.222.163.246:5060,Call ID=1028412468-47092-11@BJC.BGI.CAA.BBC,Recv: Pack=0,Lost=1(  inf%),Jitter=0.000000,Send: Pack=3001,Lost=0( 0.00%),Jitter=0.000000,Client Address=192.168.200.112:30430
-[Jun 23 01:00:23] WARNING[14106][C-00000004] chan_sip.c: Video1(callerid=8200073,exten=160165280,callid=1028412468-47092-11@BJC.BGI.CAA.BBC) Sipproxy=54.222.163.246:5060,Call ID=1028412468-47092-11@BJC.BGI.CAA.BBC,Recv: Pack=0,Lost=0( 0.00%),Jitter=0.000000,Send: Pack=0,Lost=0( 0.00%),Jitter=0.000000,Client Address=192.168.200.112:27104
-[Jun 23 01:00:23] WARNING[14106][C-00000004] chan_sip.c: Video2(callerid=8200073,exten=160165280,callid=1028412468-47092-11@BJC.BGI.CAA.BBC) Sipproxy=54.222.163.246:5060,Call ID=1028412468-47092-11@BJC.BGI.CAA.BBC,Recv: Pack=0,Lost=0( 0.00%),Jitter=0.000000,Send: Pack=0,Lost=0( 0.00%),Jitter=0.000000,Client Address=192.168.200.112:11932
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] chan_sip.c: Scheduling destruction of SIP dialog '1028412468-47092-11@BJC.BGI.CAA.BBC' in 32000 ms (Method: ACK)
-[Jun 23 01:00:23] VERBOSE[14106][C-00000004] chan_sip.c: Reliably Transmitting (NAT) to 54.223.40.55:5060:
+<--- SIP read from UDP:54.223.40.55:5060 --->
+<--- Transmitting (NAT) to 54.223.40.55:5060 --->
+
+这个一种颜色
+Call-ID: 2092103723-47092-12@BJC.BGI.CAA.BBC
+
+这一种颜色
+Server: GrandStream X-Server 1.0.2.15 (M)
+User-Agent: Grandstream GVC3200 1.0.1.78
+
+这些一种颜色
 BYE sip:11.0.6.5:5060;transport=udp SIP/2.0
-wefwef [wefwef]
-Via: SIP/2.0/UDP 11.0.32.5:5062;branch=z9hG4bK190e3545;rport
-Route: <sip:11.0.5.5:5060;transport=udp;lr>
-Max-Forwards: 70
-From: <sip:90160165280@pro.ipvideotalk.com:30000>;tag=as3a1c3ec0
-To: <sip:8200073@pro.ipvideotalk.com:30000>;tag=1940317541
 
-CSeq: 103 BYE
-User-Agent: GrandStream X-Server 1.0.2.15 (M)
-X-Hangup: RTP Timeout
-X-ECode: 5001
-X-Channel-User-Id: 8200073
-X-Channel-Conf-Id: 160165280
-Content-Length: 0
-Jun 23 01:00:02 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: INFO:conference:msg_send: send 4 bytes,proto 2:[#015#012#015#012]
-Jun 23 01:00:02 ip-11-0-5-5 /opt/opensips/sbin/opensips[15618]: WARNING:core:handle_ser_child: read response= 7fd66d333838, 1, fd -1 from 1 (15597)
-Jun 23 01:00:02 ip-11-0-5-5 /opt/opensips/sbin/opensips[15612]: INFO:core:tcp_read: ========================read 2 bytes==========================
-Jun 23 01:00:02 ip-11-0-5-5 /opt/opensips/sbin/opensips[15612]: #015
-Jun 23 01:00:02 ip-11-0-5-5 /opt/opensips/sbin/opensips[15612]: INFO:core:tcp_read: ===============================end================================
-Jun 23 01:00:03 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: WARNING:conference:_notifier_send_message: sip:anonymous@11.0.6.187:58363;transport=tcp;ri=11.0.5.5;options=400#015
-Jun 23 01:00:03 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: INFO:conference:msg_send: send 4 bytes,proto 2:[#015#012#015#012]
-Jun 23 01:00:03 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: ERROR:conference:msg_send: tcp_send failed
-Jun 23 01:00:03 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: ERROR:conference:_notifier_send_message: sip msg_send failed!, next_hop=sip:anonymous@11.0.6.187:58363;transport=tcp;ri=11.0.5.5;options=400
-Jun 23 01:00:05 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: WARNING:conference:_notifier_send_message: sip:8200093@11.0.5.136:13016;transport=tcp;ri=11.0.5.5;options=100#015
-Jun 23 01:00:05 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: INFO:conference:msg_send: send 4 bytes,proto 2:[#015#012#015#012]
-Jun 23 01:00:05 ip-11-0-5-5 /opt/opensips/sbin/opensips[15618]: WARNING:core:handle_ser_child: read response= 7fd66d32dd48, 1, fd -1 from 1 (15597)
-Jun 23 01:00:05 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ========================read 2 bytes==========================
-Jun 23 01:00:05 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: #015
-Jun 23 01:00:05 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ===============================end================================
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: WARNING:conference:_notifier_send_message: sip:8200126@11.0.5.136:13016;transport=tcp;ri=11.0.5.5;options=100#015
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: INFO:conference:msg_send: send 4 bytes,proto 2:[#015#012#015#012]
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15618]: WARNING:core:handle_ser_child: read response= 7fd66d32dd48, 1, fd -1 from 1 (15597)
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ========================read 2 bytes==========================
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: #015
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ===============================end================================
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15618]: WARNING:core:handle_ser_child: read response= 7fd66d32dd48, 1, fd -1 from 17 (15613)
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ========================read 2 bytes==========================
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: #015
-Jun 23 01:00:11 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ===============================end================================
-Jun 23 01:00:12 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: WARNING:conference:_notifier_send_message: sip:8200073@11.0.5.136:13016;transport=tcp;ri=11.0.5.5;options=100#015
-Jun 23 01:00:12 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: INFO:conference:msg_send: send 4 bytes,proto 2:[#015#012#015#012]
-Jun 23 01:00:12 ip-11-0-5-5 /opt/opensips/sbin/opensips[15618]: WARNING:core:handle_ser_child: read response= 7fd66d32dd48, 1, fd -1 from 1 (15597)
-Jun 23 01:00:12 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ========================read 2 bytes==========================
-Jun 23 01:00:12 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: #015
-Jun 23 01:00:12 ip-11-0-5-5 /opt/opensips/sbin/opensips[15613]: INFO:core:tcp_read: ===============================end================================
-Jun 23 01:00:12 ip-11-0-5-5 /opt/opensips/sbin/opensips[15618]: WARNING:core:handle_ser_child: read response= 7fd66d32dd48, 1, fd -1 from 17 (15613)
-Jun 23 01:00:13 ip-11-0-5-5 /opt/opensips/sbin/opensips[15597]: WARNING:conference:_notifier_send_message: sip:7872@11.0.6.187:57969;transport=tcp;ri=11.0.5.5;options=300#015
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: callid:cseq=179240970-24763-1@BJC.BGI.BCH.CDD:2921
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: call_xserver:pre name= 90,xserver domain=internal-BJ-XServer-internal-1737673771.cn-north-1.elb.amazonaws.com.cn:20000
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: call_xserver:rU null,call xserver OFF
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: license_xserver:requst is not come from xserver,so license_xserver OFF
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: auth:ok
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: short_num:this is not primary ,so skip short number deal
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: account_control:——in
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: register:MSILO: REGISTER received -> dumping messages with MSILO
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: register:MSILO: offline messages dumped - if they were
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: 8200292 register save=2
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: limit_gvc_version:——in
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: limit_gvc_version:8200292 now version=8 and cfg=2,option_limit_version=0
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <script>: limit_gvc_version:version higher,everything ok
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: centrix [mysql.c:1247]: mysql_db_save_device_type(): save_device_type:update username=8200292  device_type=Grandstream GVC3200 1.0.1.74
-Jun 23 01:00:06 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[994]: INFO: <core> [receive.c:315]: receive_msg(): <#######################end
-Jun 23 01:00:07 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[995]: WARNING: <core> [tcp_read.c:1101]: elb_label_process_msg(): ELB Label Message: [[>>>#012PROXY TCP4 11.0.2.50 10.0.13.30 39427 30000#015#012<<<]]
-Jun 23 01:00:07 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[995]: WARNING: elb_label [elb_label_mod.c:342]: elb_label_frame_received(): elb_label[11.0.2.50:39427,10.0.13.30:30000,11.0.2.50:39427,11.0.1.5:30000],tcp conn id=89664
-Jun 23 01:00:07 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[995]: WARNING: elb_label [redis.c:127]: redis_db_set_value(): +OK#015#012#015
-Jun 23 01:00:07 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[995]: WARNING: elb_label [redis.c:129]: redis_db_set_value(): 11.0.2.50:39427_11.0.1.5:30000=11.0.2.50:39427#015
-Jun 23 01:00:09 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[999]: ERROR: <core> [tcp_main.c:4250]: handle_tcpconn_ev(): connect 11.0.2.50:58845 failed 
-Jun 23 01:00:10 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[973]: WARNING: <core> [db_query.c:290]: db_do_delete(): delete from silo where exp_time<=1466643610
-Jun 23 01:00:13 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[999]: ERROR: <core> [tcp_main.c:4250]: handle_tcpconn_ev(): connect 11.0.1.196:5871 failed 
-Jun 23 01:00:14 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: <core> [tcp_read.c:1101]: elb_label_process_msg(): ELB Label Message: [[>>>#012PROXY TCP4 11.0.1.196 10.0.28.214 30226 30000#015#012<<<]]
-Jun 23 01:00:14 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: elb_label [elb_label_mod.c:342]: elb_label_frame_received(): elb_label[11.0.1.196:30226,10.0.28.214:30000,11.0.1.196:30226,11.0.1.5:30000],tcp conn id=89668
-Jun 23 01:00:14 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: elb_label [redis.c:127]: redis_db_set_value(): +OK#015#012#015
-Jun 23 01:00:14 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: elb_label [redis.c:129]: redis_db_set_value(): 11.0.1.196:30226_11.0.1.5:30000=11.0.1.196:30226#015
-Jun 23 01:00:15 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[999]: ERROR: <core> [tcp_main.c:4250]: handle_tcpconn_ev(): connect 11.0.1.196:5877 failed 
-Jun 23 01:00:17 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[999]: ERROR: <core> [tcp_main.c:4250]: handle_tcpconn_ev(): connect 11.0.1.196:5873 failed 
-Jun 23 01:00:17 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[999]: ERROR: <core> [tcp_main.c:4250]: handle_tcpconn_ev(): connect 11.0.2.50:58949 failed 
-Jun 23 01:00:22 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: <core> [tcp_read.c:1101]: elb_label_process_msg(): ELB Label Message: [[>>>#012PROXY TCP4 11.0.2.50 10.0.13.30 39431 30000#015#012<<<]]
-Jun 23 01:00:22 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: elb_label [elb_label_mod.c:342]: elb_label_frame_received(): elb_label[11.0.2.50:39431,10.0.13.30:30000,11.0.2.50:39431,11.0.1.5:30000],tcp conn id=89673
-Jun 23 01:00:22 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: elb_label [redis.c:127]: redis_db_set_value(): +OK#015#012#015
-Jun 23 01:00:22 ip-11-0-1-5 /opt/IPVideotalkPro/kamailio/sbin/kamailio[991]: WARNING: elb_label [redis.c:129]: redis_db_set_value(): 11.0.2.50:39431_11.0.1.5:30000=11.0.2.50:39431#015
-[Jun 23 01:43:15] NOTICE[16652] cdr.c: CDR logging disabled.
-[Jun 23 01:43:15] NOTICE[16652] loader.c: 246 modules will be loaded.
-[Jun 23 01:43:15] NOTICE[16652] res_odbc.c: res_odbc loaded.
-[Jun 23 01:43:15] ERROR[16652] ari/config.c: No configured users for ARI
-[Jun 23 01:43:15] WARNING[16652] loader.c: Error loading module 'pbx_ael.so': /opt/ast13/lib/asterisk/modules/pbx_ael.so: undefined symbol: ast_compile_ael2
-[Jun 23 01:43:15] WARNING[16652] loader.c: Module 'pbx_ael.so' could not be loaded.
-[Jun 23 01:43:15] WARNING[16652] res_rtp_asterisk.c: Invalid STUN server address: 
-[Jun 23 01:43:15] VERBOSE[16652] chan_sip.c: SIP channel loading…
-[Jun 23 01:43:16] NOTICE[16652] confbridge/conf_config_parser.c: Adding
-<— SIP read from UDP:54.223.40.55:5060 —>
-INVITE sip:150969607@54.223.80.90:5062;transport=udp SIP/2.0
-Record-Route: <sip:11.0.5.5:5060;transport=udp;lr>
-Via: SIP/2.0/UDP 11.0.5.5:5060;branch=z9hG4bK82a9.44e3a085.0;i=f3;rport
-Via: SIP/2.0/TCP 11.0.1.5;received=11.0.5.136;branch=z9hG4bK82a9.c12f611fe36896f614d266d230d73a67.0;i=50d51;rport=13016
-Via: SIP/2.0/TCP 192.168.200.181:45798;received=11.0.1.196;branch=z9hG4bK652059645;rport=30009;alias
-From: "shqu's-GVC" <sip:8200093@pro.ipvideotalk.com:30000>;tag=1650485337
-To: <sip:90150969607*111@pro.ipvideotalk.com:30000>
-Call-ID: 1616665442-18042-36@BJC.BGI.CAA.BIB
-CSeq: 352 INVITE
-Max-Forwards: 68
-User-Agent: Grandstream GVC3200 1.0.1.61
-X-GS-SERVER-ID: oGkSZVlzOAX0r59rIzjYgBoQ3BB5LpUJKR2FT+TTekLKbYr4P2o
-X-Device-Alias: Grandstream GVC3200 1.0.1.74
-Privacy: none
-P-Preferred-Identity: "shqu's-GVC" <sip:8200093@pro.ipvideotalk.com:30000>
-Supported: replaces, path, timer, eventlist
-X-GS-IP: 192.168.200.181
-Min-SE: 14400
-Session-Expires: 14400
-Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, SUBSCRIBE, NOTIFY, INFO, REFER, UPDATE, MESSAGE
-Content-Type: application/sdp
-Accept: application/sdp, application/dtmf-relay
-Content-Length: 1863
-X-GS-EP-INFO: 101.71.248.138:45798
-P-hint: outbound
-P-SERVER-ID: 11.0.1.5
-Contact: <sip:11.0.5.5:5060;transport=udp>
-X-Conf-Serial-No: 9A42DBC82A9042DC9A76A31E7DFF40FB
-X-Conf-User-Id: 8200093
-X-Conf-Id: 150969607
-<— SIP read from UDP:54.223.40.55:5060 —>
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  WAR    http clearMeeting not find end flag but web Response to Conferernce  [clearMeetingInfo line:3989]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  INFO   20160623010023 webservice clearMeeting nobody OK  [confNoBody line:596]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  ERR    (null)  AMI tcp not found and create fail  [getAvailableAmiConnection line:1162]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  ERR    (null)  AMI tcp not found and create fail  [getAvailableAmiConnection line:1162]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  ERR    ami init fail  [sendMessageAndGetInfo line:3877]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  ERR    getConfVideoState failed!#012  [getConfVideoState line:2490]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  ERR    connect service fail  [getConfVideoState line:2491]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  ERR    getConfVideoState from asterisk failed [leave]!#012  [step2 line:229]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  INFO    mic_cur_num is >0 so mic++  [addMic line:1411]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  NOTICE ——>step3   leave 1028412468-47092-11@BJC.BGI.CAA.BBC 20160623T010023.758813
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  INFO   20160623010023  Begin sendConfBirdgeHold  [sendConfBirdgeHold line:940]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  INFO   20160623010023 creator leave no need operator hold Ami  [sendConfBirdgeHold line:946]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  INFO   20160623010023  End sendConfBirdgeHold  [sendConfBirdgeHold line:1011]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  INFO    host leave and deal it  [step3 line:332]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  NOTICE ——>step4   leave 1028412468-47092-11@BJC.BGI.CAA.BBC 20160623T010023.762259
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  INFO   20160623010023 conf end or conf no body,so not send notify someone leave  [step4 line:428]
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  NOTICE ——>step5   leave 1028412468-47092-11@BJC.BGI.CAA.BBC 20160623T010023.762443
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  NOTICE ——>step6   leave 1028412468-47092-11@BJC.BGI.CAA.BBC 20160623T010023.763093
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  NOTICE ——>step7   leave 1028412468-47092-11@BJC.BGI.CAA.BBC 20160623T010023.763167
-Jun 23 01:00:23 ip-11-0-5-5 conference[15621]:  NOTICE TranEnd   leave 1028412468-47092-11@BJC.BGI.CAA.BBC 00:00:00.031083
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    delete redis for Idle time out   [run line:482]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    delete redis for Idle time out   [run line:482]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    waring:RedisChannel ping fail,so delete it.  [run line:492]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    waring:RedisChannel ping fail,so delete it.  [run line:492]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    waring:RedisChannel ping fail,so delete it.  [run line:492]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    waring:RedisChannel ping fail,so delete it.  [run line:492]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    waring:RedisChannel ping fail,so delete it.  [run line:492]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  INFO    waring:RedisChannel ping fail,so delete it.  [run line:492]
-Jun 23 01:00:35 ip-11-0-5-5 conference[15621]:  WAR    RedisChannel::~RedisChannel  [~RedisChannel line:66]
-Jun 23 01:01:03 ip-11-0-5-5 conference[15621]:  INFO    Get local ip from AWS,please wait…  [setLocalIP line:664]
+INVITE sip:
+ACK sip:
+CANCEL sip:
+BYE sip:
+SIP/2.0 180 Ringing
+SIP/2.0 200 OK
 
-<— Transmitting (NAT) to 54.223.40.55:5060 —>
-Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, SUBSCRIBE, NOTIFY, INFO, REFER, UPDATE, MESSAGE
+这些一种颜色
+
+REFER sip:
+SUBSCRIBE sip:
+NOTIFY sip:
+INFO sip:
+PUBLISH sip:
+MESSAGE sip:
+UPDATE sip:
+OPTIONS sip:
+
+----->step 这后面的全部一种颜色
+Jun 23 01:31:20 ip-11-0-5-5 conference[15621]:  NOTICE ----->step1   leave 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013120.894152
+
+这是一种颜色， 这个不是行开头
+Jun 23 01:31:20 ip-11-0-5-5 conference[15621]:  NOTICE ----->step1   leave 663717134-10264-3@BJC.BGI.CAA.BCE 20160623T013120.894152
+
+**************************** ，这一行都要标颜色
+Jun 23 01:01:16 ip-11-0-5-5 /opt/opensips/sbin/opensips[15605]: ****************************422***Session Interval Too Small******[54.223.80.90:5062]***********************[2092103723-47092-12@BJC.BGI.CAA.BBC:111]

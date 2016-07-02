@@ -8,9 +8,19 @@ patterns:
 - include: '#string'
 
 - include: '#support'
+- include: '#markup'
 
 - name: invalid.deprecated
   match: \b(WAR|WARNING)\b
+
+- name: variable.parameter
+  match: (^(INVITE|ACK|PUBLISH|OPTIONS|CANCEL|BYE|SUBSCRIBE|NOTIFY|INFO|REFER|UPDATE|MESSAGE) sip|SIP/2.0 180 Ringing|SIP/2.0 200 OK)
+
+- name: support.function
+  match: -----\>step.+$
+
+- name: comment
+  match: .+\*{3,}.+
 
 - name: comment
   match: \b(INFO|VERBOSE)\b
@@ -24,17 +34,18 @@ patterns:
 - name: string.quote.single 
   match: ^\s*\[.+?\]
 
+
+- name: string.quote.single 
+  match: (--->|<---)( SIP read from | Transmitting \(NAT\) to | SIP transmit to).+$
+
 - name: constant.character
   match: \<— SIP read from .+ —\>
 
 - name: constant.numeric
   match: \<— Transmitting \(NAT\) .+ —\>
 
-- name: string.quote.double
-  match: ^(INVITE|ACK|OPTIONS|CANCEL|BYE|SUBSCRIBE|NOTIFY|INFO|REFER|UPDATE|MESSAGE) sip:
-
-- name: entity.name
+- name: constant.numeric
   match: ^Call-ID\:.+$
 
-- name: entity.other
-  match: ^User-Agent:\:.+$
+- name: entity.name.function
+  match: ^(User-Agent|Server)\:.+$
