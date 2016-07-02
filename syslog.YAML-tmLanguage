@@ -35,7 +35,7 @@ patterns:
   match: ^\s*\[.+?\]
 
 
-- name: string.quote.single 
+- name: comment.line
   match: (--->|<---)( SIP read from | Transmitting \(NAT\) to | SIP transmit to).+$
 
 - name: constant.character

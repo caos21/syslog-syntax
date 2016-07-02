@@ -74,7 +74,7 @@
 			<key>match</key>
 			<string>(---&gt;|&lt;---)( SIP read from | Transmitting \(NAT\) to | SIP transmit to).+$</string>
 			<key>name</key>
-			<string>string.quote.single</string>
+			<string>comment.line</string>
 		</dict>
 		<dict>
 			<key>match</key>
