@@ -14,7 +14,7 @@ patterns:
   match: \b(WAR|WARNING)\b
 
 - name: variable.parameter
-  match: (^(INVITE|ACK|PUBLISH|OPTIONS|CANCEL|BYE|SUBSCRIBE|NOTIFY|INFO|REFER|UPDATE|MESSAGE) sip|SIP/2.0 180 Ringing|SIP/2.0 200 OK)
+  match: (^(INVITE|ACK|PUBLISH|OPTIONS|CANCEL|BYE|SUBSCRIBE|NOTIFY|INFO|REFER|UPDATE|MESSAGE) sip.+$|SIP/2.0 180 Ringing|SIP/2.0 200 OK)
 
 - name: support.function
   match: -----\>step.+$

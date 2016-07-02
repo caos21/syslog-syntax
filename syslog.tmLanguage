@@ -30,7 +30,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(^(INVITE|ACK|PUBLISH|OPTIONS|CANCEL|BYE|SUBSCRIBE|NOTIFY|INFO|REFER|UPDATE|MESSAGE) sip|SIP/2.0 180 Ringing|SIP/2.0 200 OK)</string>
+			<string>(^(INVITE|ACK|PUBLISH|OPTIONS|CANCEL|BYE|SUBSCRIBE|NOTIFY|INFO|REFER|UPDATE|MESSAGE) sip.+$|SIP/2.0 180 Ringing|SIP/2.0 200 OK)</string>
 			<key>name</key>
 			<string>variable.parameter</string>
 		</dict>
