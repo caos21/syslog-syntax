@@ -1,4 +1,37 @@
+新增： AMI Send:   和 AMI Recv: 需要标记一种颜色
+
+Jun 2Jun 23 02:24:57 ip-11-0-5-5 conference[15621]:  INFO    AMI Send:54.223.80.90 Action: ConfbridgeSetSendInfoToMCU#015#012Conference: 100665637#015#012Variable: SIP/8200190-00000027:M:N|#015#012MCUAddr: 11.0.32.14#015#012#015#012  [commandSend line:308]
+
+Jun 2Jun 23 02:24:57 ip-11-0-5-5 conference[15621]:  INFO    AMI Recv:54.223.80.90 Response: Success#015#012Message: Conference handle mcu connect#015#012#015#012  [commandResult line:258]
+
+新增 m=后面都一种颜色：
+
+m=audio 51569 UDP/TLS/RTP/SAVPF 9 0 8
+
+新增， ：<conference-info 整行用一种颜色
+<conference-info refresh="8" entity="100072223" s="1100100001100110" state="partial"><users><user entity="8200094" callid="877913059-12863-36@BJC.BGI.CAA.BCB" display="" state="deleted"/></users></conference-info> SIPml-api.js:1:9015
+
 这一种颜色
+
+新增SEND: 和recv: ， 需要与---> SIP transmit to一样的颜色：
+
+SEND:
+SIP/2.0 200 OK
+Via: SIP/2.0/WS 11.0.6.5:10080;rport=10080;branch=z9hG4bK9f010ccc9896b3221e6f9ee4fe2f4e8ca2f25c85
+From: <sip:130368401*123@127.0.0.1>;tag=as24e5856d
+To: <sip:10000039079@webrtc.grandstream.com>;tag=c5XM2LIf4uNkSbs2hnvr
+Contact: <sips:10000039079@df7jal23ls0d.invalid;transport=wss>
+Call-ID: ede29896-1f8c-285b-1d79-d201b00a763f
+
+recv:
+ACK sip:10000039079@127.0.0.1:6060;transport=tcp;ovid=dcfb0cc1;ov-ob=fefc5ebed7;ri=11.0.6.5;options=200 SIP/2.0
+Via: SIP/2.0/WS 11.0.6.5:10080;branch=z9hG4bKf6cdc26c9896b3221e6f9ee4fe2f4e8ca2f25c85
+From: <sip:130368401*123@127.0.0.1>;tag=as24e5856d
+To: <sip:10000039079@webrtc.grandstream.com>;tag=c5XM2LIf4uNkSbs2hnvr
+Contact: <sip:130368401@54.223.71.203:5062>
+Call-ID: ede29896-1f8c-285b-1d79-d201b00a763f
+CSeq: 103 ACK
+
 [Jun 23 01:00:23] NOTICE[14106][C-00000004] chan_sip.c: [2016-06-23 01:00:23] Outgoing: ---> SIP transmit to UDP:54.223.40.55:5060 ||| BYE sip:11.0.6.5:5060;transport=udp SIP/2.0~~Via: SIP/2.0/UDP 11.0.32.5:5062;branch=z9hG4bK190e3545;rport~~Route: <sip:11.0.5.5:5060;transport=udp;lr>~~Max-Forwards: 70~~From: <sip:90160165280@pro.ipvideotalk.com:30000>;tag=as3a1c3ec0~~To: <sip:8200073@pro.ipvideotalk.com:30000>;tag=1940317541~~Call-ID: 1028412468-47092-11@BJC.BGI.CAA.BBC~~CSeq: 103 BYE~~User-Agent: GrandStream X-Server 1.0.2.15 (M)~~X-Hangup: RTP Timeout~~X-ECode: 5001~~X-Channel-User-Id: 8200073~~X-Channel-Conf-Id: 160165280~~Content-Length: 0~~~~
 
 [Jun 23 01:00:23] NOTICE[14063] chan_sip.c: [2016-06-23 01:00:23] Incoming: <--- SIP read from   UDP:54.223.40.55:5060 ||| SIP/2.0 200 OK~~Record-Route: <sip:160165280@11.0.5.5:5060;transport=udp;lr>~~Via: SIP/2.0/UDP 11.0.32.5:5062;received=54.223.80.90;branch=z9hG4bK190e3545;rport=5062~~Record-Route: <sip:90160165280@pro.ipvideotalk.com:30000;transport=tcp;lr>~~From: <sip:90160165280@pro.ipvideotalk.com:30000>;tag=as3a1c3ec0~~To: <sip:8200073@pro.ipvideotalk.com:30000>;tag=1940317541~~Call-ID: 1028412468-47092-11@BJC.BGI.CAA.BBC~~CSeq: 103 BYE~~X-GS-SERVER-ID: m+vllFAzgeQkKuY+1MtWnOh6JRvcaTM1l6xo/v33/rWRHIIYV2k~~Supported: replaces, path, timer, eventlist~~User-Agent: Grandstream GVC3200 1.0.1.78~~X-Device-Alias: Grandstream GVC3200 1.0.1.78~~Allow: INVITE, ACK, OPTIONS, CANCEL, BYE, SUBSCRIBE, NOTIFY, INFO, REFER, UPDATE, MESSAGE~~Content-Length: 0~~Contact: <sip:160165280@11.0.5.5:5060;transport=udp>~~~~
@@ -14,6 +47,14 @@ Server: GrandStream X-Server 1.0.2.15 (M)
 User-Agent: Grandstream GVC3200 1.0.1.78
 
 这些一种颜色
+
+新增 ：
+
+SIP/2.0 500 Undefined
+SIP/2.0 404
+4xx
+5xx
+
 BYE sip:11.0.6.5:5060;transport=udp SIP/2.0
 
 INVITE sip:
@@ -25,6 +66,8 @@ SIP/2.0 200 OK
 
 这些一种颜色
 
+新增REGISTER sip:消息， 上次漏了
+REGISTER sip:
 REFER sip:
 SUBSCRIBE sip:
 NOTIFY sip:

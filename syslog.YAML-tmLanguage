@@ -34,7 +34,6 @@ patterns:
 - name: string.quote.single 
   match: ^\s*\[.+?\]
 
-
 - name: comment.line
   match: (--->|<---)( SIP read from | Transmitting \(NAT\) to | SIP transmit to).+$
 
@@ -45,7 +44,18 @@ patterns:
   match: \<— Transmitting \(NAT\) .+ —\>
 
 - name: constant.numeric
+  match: (SEND\:|recv\:).+\>
+
+- name: constant.numeric
   match: ^Call-ID\:.+$
 
 - name: entity.name.function
   match: ^(User-Agent|Server)\:.+$
+
+- name: constant.language
+  match: (AMI Send\:|AMI Recv\:|m\=).+
+
+- name: constant.o
+  match: .*<conference-info.+
+
+
