@@ -44,7 +44,7 @@ patterns:
   match: \<— Transmitting \(NAT\) .+ —\>
 
 - name: constant.numeric
-  match: (SEND\:|send\:|recv\:).*\>
+  match: (SEND\:|send\:|recv\:).*
 
 - name: constant.numeric
   match: ^Call-ID\:.+$
