@@ -11,18 +11,6 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>include</key>
-			<string>#string</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#support</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#markup</string>
-		</dict>
-		<dict>
 			<key>match</key>
 			<string>\b(WAR|WARNING)\b</string>
 			<key>name</key>
